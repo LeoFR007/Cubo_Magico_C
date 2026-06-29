@@ -34,7 +34,9 @@ Implementação funcional de um **Cubo Mágico (Rubik's Cube) 3×3×3** em lingu
 ├── embaralhador.c      # Gerador de cubos embaralhados
 ├── resolvedor.c        # Algoritmo resolvedor (método de camadas)
 └── README.md
+
 ```
+
 ---
 
 ##  Visualização
