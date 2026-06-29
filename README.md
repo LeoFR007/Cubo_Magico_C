@@ -1,6 +1,6 @@
-# 🎲 Cubo Mágico em C
+# Cubo Mágico em C
 
-Implementação funcional de um **Cubo Mágico (Rubik's Cube) 3×3×3** em linguagem C, com embaralhador automático, visualizador interativo no terminal e resolvedor automático utilizando o método de camadas.
+Implementação funcional de um **Cubo Mágico (Rubik's Cube) 3×3×3** em linguagem C.
 
 ---
 
@@ -10,7 +10,7 @@ Implementação funcional de um **Cubo Mágico (Rubik's Cube) 3×3×3** em lingu
 - **Rotações completas** nas 6 direções (Norte, Sul, Leste, Oeste, Frente, Trás), no sentido horário e anti-horário
 - **Embaralhador automático** com geração de múltiplos cubos embaralhados salvos em arquivos `.txt`
 - **Visualizador interativo** no terminal usando a biblioteca `ncurses`, com cores reais de cada face
-- **Resolvedor automático** baseado no método de camadas (Layer-by-Layer):
+- **Resolvedor automático** baseado no método de camadas:
   1. Cruz branca
   2. Cantos brancos
   3. Camada do meio
@@ -36,43 +36,6 @@ Implementação funcional de um **Cubo Mágico (Rubik's Cube) 3×3×3** em lingu
 └── README.md
 ```
 
----
-
-## ⚙️ Dependências
-
-- Compilador C (`gcc`)
-- Biblioteca `ncurses`
-
-### Instalação das dependências (Ubuntu/Debian):
-
-```bash
-sudo apt install gcc libncurses5-dev libncursesw5-dev
-```
-
----
-
-## 🚀 Como Compilar e Executar
-
-### Embaralhador
-
-Gera `n` cubos embaralhados e salva na pasta `cubos_embaralhados/`:
-
-```bash
-gcc embaralhador.c rotacoes.c -o embaralhador
-./embaralhador
-```
-
-### Resolvedor
-
-Resolve um cubo a partir de um arquivo gerado pelo embaralhador:
-
-```bash
-gcc resolvedor.c rotacoes.c -o resolvedor -lncurses
-./resolvedor cubos_embaralhados/cubo_1.txt
-```
-
----
-
 ## 🎨 Visualização
 
 O visualizador usa `ncurses` para exibir o cubo no terminal com as cores reais de cada face:
@@ -94,15 +57,8 @@ Cada face é exibida com sua cor correspondente:
 | 🟣 Magenta | Esquerda |
 | 🔴 Vermelho | Trás |
 
-Pressione `Q` para avançar entre as etapas da resolução.
-
 ---
 
-## 🧠 Algoritmo de Resolução
-
-O resolvedor implementa o clássico **método de camadas (Layer-by-Layer)**, resolvendo o cubo em 7 etapas sequenciais, da camada branca até as arestas amarelas.
-
----
 
 ## 📄 Formato dos Arquivos de Cubo
 
@@ -120,9 +76,3 @@ Face: BAIXO
 ```
 
 Cada número representa uma cor (0 = Branco, 1 = Amarelo, 2 = Verde, 3 = Azul, 4 = Magenta, 5 = Vermelho).
-
----
-
-## 👨‍💻 Autor
-
-Desenvolvido como projeto acadêmico em linguagem C.
