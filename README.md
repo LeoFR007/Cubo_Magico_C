@@ -4,7 +4,7 @@ Implementação funcional de um **Cubo Mágico (Rubik's Cube) 3×3×3** em lingu
 
 ---
 
-## 📋 Funcionalidades
+##  Funcionalidades
 
 - **Representação do cubo** como matriz tridimensional `[6][3][3]` com cores enumeradas
 - **Rotações completas** nas 6 direções (Norte, Sul, Leste, Oeste, Frente, Trás), no sentido horário e anti-horário
@@ -21,7 +21,7 @@ Implementação funcional de um **Cubo Mágico (Rubik's Cube) 3×3×3** em lingu
 
 ---
 
-## 🗂️ Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 .
@@ -35,8 +35,9 @@ Implementação funcional de um **Cubo Mágico (Rubik's Cube) 3×3×3** em lingu
 ├── resolvedor.c        # Algoritmo resolvedor (método de camadas)
 └── README.md
 ```
+---
 
-## 🎨 Visualização
+##  Visualização
 
 O visualizador usa `ncurses` para exibir o cubo no terminal com as cores reais de cada face:
 
@@ -60,7 +61,7 @@ Cada face é exibida com sua cor correspondente:
 ---
 
 
-## 📄 Formato dos Arquivos de Cubo
+##  Formato dos Arquivos de Cubo
 
 Os cubos são salvos em arquivos `.txt` no seguinte formato:
 
