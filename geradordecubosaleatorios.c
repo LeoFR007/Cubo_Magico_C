@@ -1,4 +1,4 @@
-#include "include/cubo.h"
+#include "cubo.h"
 
 FILE *cuboembaralhado;
 int cubo[6][3][3];

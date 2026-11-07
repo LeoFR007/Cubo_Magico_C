@@ -1,0 +1,7 @@
+# Arquivos gerados na compilacao (nao versionar)
+obj/
+*.o
+resolvedor
+embaralhador
+geradorcuboresolvido
+geradordecubosaleatorios
